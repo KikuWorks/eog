@@ -42,6 +42,8 @@ const weatherDataRecevied = (state, action) => {
   };
 };
 
+
+
 const handlers = {
   [actions.FETCH_WEATHER]: startLoading,
   [actions.WEATHER_ID_RECEIVED]: weatherIDReceived,

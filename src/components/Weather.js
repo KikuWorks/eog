@@ -51,12 +51,17 @@ const mapState = (state, ownProps) => {
 };
 
 const mapDispatch = dispatch => ({
-  onLoad: () =>
+  onLoad: () =>{
+
     dispatch({
       type: actions.FETCH_WEATHER,
       longitude: -95.3698,
       latitude: 29.7604
     })
+    dispatch({
+      type: actions.FETCH_DRONE_DATA
+    })
+  }
 });
 
 export default connect(
